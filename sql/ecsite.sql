@@ -1,6 +1,6 @@
 set names utf8;
 set foreign_key_checks = 0;
-drop databases if exists ecsite;
+drop database if exists ecsite;
 create database if not exists ecsite;
 use ecsite;
 
@@ -41,5 +41,5 @@ create table user_buy_item_transaction(
 );
 
 INSERT INTO item_info_transaction(item_name, item_price, item_stock) VALUES("ノートブック", 100, 50);
-INSERT INTO login_user_transaction(login_id, login_pass, user_name) VALUES("diworks", diworks01, "test");
+INSERT INTO login_user_transaction(login_id, login_pass, user_name) VALUES("diworks", "diworks01", "test");
 
