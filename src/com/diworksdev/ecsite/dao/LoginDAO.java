@@ -25,7 +25,7 @@ public class LoginDAO {
 
 			if(resultSet.next()) {
 				loginDTO.setLoginId(resultSet.getString("login_id"));
-				loginDTO.setLoginPassword(resultSet.getString("login_id"));
+				loginDTO.setLoginPassword(resultSet.getString("login_password"));
 				loginDTO.setUserName(resultSet.getString("user_name"));
 
 				if(resultSet.getString("login_id") != null) {
