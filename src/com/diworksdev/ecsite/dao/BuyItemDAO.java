@@ -3,7 +3,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-//import com.diworksdev.ecsite.dto.BuyItemDTO;
+import com.diworksdev.ecsite.dto.BuyItemDTO;
 import com.diworksdev.ecsite.util.DBConnector;
 
 public class BuyItemDAO {
@@ -11,7 +11,7 @@ public class BuyItemDAO {
 	private Connection connection = dbConnector.getConnection();
 	private BuyItemDTO buyItemDTO = new BuyItemDTO();
 
-	public BuyItemDTO getBuyItemDTO(){
+	public BuyItemDTO getBuyItemInfo(){
 		String sql = "SELECT id, item_name, item_price, FROM item_info_transaction";
 
 		try{
