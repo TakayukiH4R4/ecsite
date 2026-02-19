@@ -1,17 +1,17 @@
 package com.diworksdev.ecsite.action;
 
-//import com.diworksdev.ecsite.dao.BuyItemCompleteDAO;
 import java.sql.SQLException;
 import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 
+import com.diworksdev.ecsite.dao.BuyItemCompleteDAO;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class BuyItemConfirmAction extends ActionSupport implements SessionAware{
 
 	public Map<String, Object> session;
-	private BuyItemCompleteDAO buyItemCOmpleteDAO = new BuyItemCOmpleteDAO();
+	private BuyItemCompleteDAO buyItemCompleteDAO = new BuyItemCompleteDAO();
 	public String execute() throws SQLException {
 		buyItemCompleteDAO.buyItemInfo(
 				session.get("id").toString(),
