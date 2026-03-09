@@ -30,9 +30,14 @@
 	}
 
 /* ======== ID LAYOUT ======== */
-
 	#top {
 		width: 780px;
+		margin:30px auto;
+		border: 1px solid #333;
+	}
+
+	#header {
+		width: 100%;
 		height: 80px;
 		background-color: black;
 	}
@@ -42,6 +47,7 @@
 		height: 500px;
 		text-align: center;
 	}
+
 
 	#footer {
 		width: 100%;
@@ -58,9 +64,6 @@
 
 	<div id="main">
 		<div id="top">
-			<p>BuyItemComplete</p>
-		</div>
-		<div>
 			<p>BuyItemComplete</p>
 		</div>
 		<div>

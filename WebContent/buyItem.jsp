@@ -80,6 +80,14 @@
 					</tr>
 					<tr>
 						<td>
+							<span>値段</span>
+						</td>
+						<td>
+							<s:property value="session.buyItem_price"/>円
+						</td>
+					</tr>
+					<tr>
+						<td>
 							<span>購入個数</span>
 						</td>
 						<td>
