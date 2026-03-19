@@ -4,11 +4,11 @@ package com.diworksdev.ecsite.action;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Map;
-//import com.diworksdev.ecsite.dao.MyPageDAO;
-//import com.diworksdev.ecsite.dto.MyPageDTO;
 
 import org.apache.struts2.interceptor.SessionAware;
 
+import com.diworksdev.ecsite.dao.MyPageDAO;
+import com.diworksdev.ecsite.dto.MyPageDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class MyPageAction extends ActionSupport implements SessionAware{
